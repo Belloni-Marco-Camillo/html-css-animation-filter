@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contain1440px{
+    width: 1440px;
+    margin: 0 auto;
+}
+.contain1440px>h1{
+    text-align: center;
+}
+.exercise-box{
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+
+.exercise-box-p{
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+.box-img{
+    width: 600px;
+    height: 300px;
+}
+
+.box-img>img{
+    width: 100%;
+    height: 100%;
+}
+
+/*fine classi speciali*/
+
+.example-first{
+    border: 1px solid red;
+    transition: background-color 5s;
+}
+.example-first:hover{
+    background-color: red;
+}
+
+/*fine primo esercizio*/
+
+.example-second{
+    background-color: red;
+    transition: 10s;
+}
+..example-second:active{
+    width: 100%;
+   background-color: red;
+}
+
+/*fine secondo esercizio*/
+.example-third{
+    background-color: red;
+    transition: 5s;
+}
+.example-third:hover{
+    border-radius: 100%;
+}
+
+/*fine terzo esercizio*/
+.example-fourth{
+    background-color: red;
+    transition: 1s;
+}
+.example-fourth:hover{
+    opacity: 0;
+}
+/*fine quarto esercizio*/
+.example-fifth{
+    background-color: red;
+    transition: 1s;
+    
+}
+.example-fifth:hover{
+    width: 110px;
+    height: 110px;
+}
+/*fine quinto esercizio*/
+.example-sixth:hover{
+    filter: grayscale(1);
+}
+/*fine sesto esercizio*/
+.example-seven:hover{
+    filter: sepia(1);
+    transition: 4s;
+}
+
+/*fine settimo esercizio*/
+.example-eight:hover{
+    filter: sepia(1);
+    transition: 4s;
+}
+.example-eight>img:hover{
+    border-radius: 15%;
+    transition: 5s;
+}
+/*fine esercizio 8*/
+.example-nine:hover{
+    filter: sepia(1);
+    transition: 4s;
+}
+.example-nine>img{
+    width: 80%;
+    height: 80%;
+    padding: 30px;
+}
+.example-nine>img:hover{
+    border-radius: 15%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transition: 2s;
+}
+/*fine esercizio 9*/
+
+.exercise-box-rotate{
+    height: 100px;
+    width: 100%;
+    background-color: #F5F5F5;
+    line-height: 100px;
+}
+.example-ten>img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
+    animation: rotazione 4s linear infinite;
+}
+@keyframes rotazione { 
+    100% { -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+/*fine esercizio 10*/
+.example-eleven>img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
+    
+}
+.example-eleven>img:hover{
+    animation: rotazione 4s linear infinite;
+}
+@keyframes rotazione { 
+    80% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+/*fine esercizio 11*/
+.box-p{
+    padding: 0 auto;
+    text-align: center;
+    width: 15%;
+    border: 1px solid;
+}
+.exercise-box-p{
+    position: relative;
+}
+.sup-space{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    height: 25px;
+    width: 25px;
+    background-color: #F5F5F5;
+    animation: move-right;
+}
+.sub-space{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    height: 25px;
+    width: 25px;
+    background-color: #F5F5F5;
+    animation: move-left;
+}
+.exercise-box-p:hover{
+    animation: 3s;
+}
+@keyframes move-left{
+    0%{
+        left:200px
+    } 
+    50%{
+        left: 150px;
+    }
+    100%{
+        left: 200px;
+    }
+}
+@keyframes move-right{
+    0%{
+        left:70px;
+    } 
+    50%{
+        left: 120px;
+    }
+    100%{
+        left: 70px;
+    }
+}
