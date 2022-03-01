@@ -172,7 +172,7 @@ body{
     height: 25px;
     width: 25px;
     background-color: #F5F5F5;
-    animation: move-right;
+    animation: move-right 3s;
 }
 .sub-space{
     position: absolute;
@@ -181,10 +181,7 @@ body{
     height: 25px;
     width: 25px;
     background-color: #F5F5F5;
-    animation: move-left;
-}
-.exercise-box-p:hover{
-    animation: 3s;
+    animation: move-left 3s;
 }
 @keyframes move-left{
     0%{
@@ -207,4 +204,60 @@ body{
     100%{
         left: 70px;
     }
+}
+
+#second-box>.sub-space{
+    background-color: #F5F5F5;
+    animation: move-orario-secondo 2s infinite;
+}
+#second-box>.sup-space{
+    background-color: #F5F5F5;
+    animation: move-orario-primo 2s infinite;
+}
+
+@keyframes move-orario-primo{
+    0%{
+        left: 40px;
+        top: 30px;
+    }
+    25%{
+        left: 240px;
+        top: 30px;
+    }
+    50%{
+        left: 240px;
+        top: 90px;
+    }
+    75%{
+        left: 40px;
+        top: 90px;
+    }
+    100%{
+        left: 40px;
+        top: 30px;
+    }
+
+}
+@keyframes move-orario-secondo{
+    0%{
+        left: 180px;
+        top: 90px;
+    }
+    25%{
+        left: 40px;
+        top: 90px;
+    }
+    50%{
+        left: 40px;
+        top: 30px;
+    }
+    75%{
+        left: 240px;
+        top: 30px;
+    }
+    100%{
+        left: 240px;
+        top: 90px;
+    }
+
 }
