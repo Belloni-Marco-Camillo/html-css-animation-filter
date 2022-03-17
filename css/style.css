@@ -206,11 +206,11 @@ body{
     }
 }
 
-#second-box>.sub-space{
+#second-box:hover>.sub-space{
     background-color: #F5F5F5;
     animation: move-orario-secondo 2s infinite;
 }
-#second-box>.sup-space{
+#second-box:hover>.sup-space{
     background-color: #F5F5F5;
     animation: move-orario-primo 2s infinite;
 }
